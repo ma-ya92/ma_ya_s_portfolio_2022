@@ -11,7 +11,8 @@
   font-weight: bold;
 }
 
-.about-section h1 {
+.about-section h1,
+footer h1 {
   font-family: var(--heading-font-family);
   font-size: 64px;
   font-weight: bold;
@@ -159,16 +160,13 @@ nav li.active a {
 
   .content h1 {
     text-align: center;
+    font-size: 38px;
     padding: 100px 0px 70px 0px;
   }
 
   .hero h1 {
     font-size: 56px;
     padding-top: 10px;
-  }
-
-  .content h1 {
-    font-size: 38px;
   }
 
   .about-section h1 {
@@ -189,9 +187,54 @@ nav li.active a {
   }
 }
 
-@media (max-width: 400px) {
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 70px;
+  border-radius: 10px;
+}
+
+footer h4 {
+  font-size: 48px;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--default-font-family);
+  margin-top: 30px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0px 30px;
+  color: var(--branding-color);
+}
+
+@media (max-width: 450px) {
   nav li {
     font-size: 14px;
     padding: 20px 7px;
+  }
+
+  footer .email-link {
+    font-size: 18px !important;
+    text-align: center;
+  }
+
+  footer .social-links {
+    margin: 0;
   }
 }
